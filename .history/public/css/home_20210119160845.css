@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url(https://images.unsplash.com/photo-1529091040172-b9becdf180fb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjR8fGNhbXBmaXJlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+#mainLink {
+    font-weight: bold;
+    color: white;
+    background-color: white;
+}
+
+.nav-link {
+    padding: .25rem 0;
+    font-weight: 600;
+    margin-left: 1rem;
+    color: rgba(255, 255, 255, .5);
+    border-bottom: 0.25rem solid transparent;
+}
+
+nav-link:hover {
+    border-bottom-color: rgba(255, 255, 255, .5);
+}

@@ -1,0 +1,29 @@
+#add-camp{
+    color: red;
+    text-shadow: 1px 1px 2px  black, 0 0 1em white, 0 0 .2em grey;
+    font-weight: 700;
+    border: 2px solid red;
+    background-color: rgb(131, 74, 20);
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+
+.reviews{
+    border-bottom: 5px solid black;
+}
+
+abbr {
+    font-style: italic;
+    font-size: smaller;
+    font-weight: 300;
+    white-space: pre;
+    text-indent:25%;
+}
+
+.timeStamp {
+    color: rgb(7, 18, 47);
+    font-size: .75rem;
+    font-weight: 900;
+    font-style: italic;
+}

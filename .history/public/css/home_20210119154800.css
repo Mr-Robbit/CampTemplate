@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+#mainLink {
+    font-weight: bold;
+    color: white;
+    background-color: white;
+}

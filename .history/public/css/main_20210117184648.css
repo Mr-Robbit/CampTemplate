@@ -1,0 +1,113 @@
+#add-camp{
+    color: red;
+    text-shadow: 1px 1px 2px  black, 0 0 1em white, 0 0 .2em grey;
+    font-weight: 700;
+    border: 2px solid red;
+    background-color: rgb(131, 74, 20);
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+
+.reviews{
+    border-bottom: 5px solid black;
+}
+
+abbr {
+    font-style: italic;
+    font-size: smaller;
+    font-weight: 300;
+    margin-left: 25px;
+}
+
+.timeStamp {
+    color: rgb(7, 18, 47);
+    font-size: .75rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
+.campTitle {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+
+.pictureFrame {
+    height: 10rem;
+    
+    border: 2px solid black;
+    overflow: hidden;
+
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+ 
+  
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+  label {
+    border: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 2px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  label::before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  
+  label img {
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  
+  :checked+label {
+    border-color: #ddd;
+  }
+  
+  :checked+label::before {
+    content: "✓";
+    background-color: grey;
+    transform: scale(1);
+  }
+  
+  :checked+label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+  }

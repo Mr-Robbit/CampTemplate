@@ -1,0 +1,58 @@
+#add-camp{
+    color: red;
+    text-shadow: 1px 1px 2px  black, 0 0 1em white, 0 0 .2em grey;
+    font-weight: 700;
+    border: 2px solid red;
+    background-color: rgb(131, 74, 20);
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+
+.reviews{
+    border-bottom: 5px solid black;
+}
+
+abbr {
+    font-style: italic;
+    font-size: smaller;
+    font-weight: 300;
+    margin-left: 25px;
+}
+
+.timeStamp {
+    color: rgb(7, 18, 47);
+    font-size: .75rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+span .pronounced {
+    color: red;
+    font-style: oblique;
+}
+
+span .optional {
+    color: green;
+    font-style: unset;
+}
+
+.campTitle {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+img.pictureFrame{
+    height: 15rem;
+    width: 10rem;
+}
+.pictureFrame {
+    height: 15rem;
+    width: 10rem;
+    border: 2px solid black;
+    overflow: hidden;
+
+}
