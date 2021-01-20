@@ -31,7 +31,7 @@ const MongoDBStore = require('connect-mongo')(session);
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelpcamp';
 
-mongoose.connect( dbUrl, {
+mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -181,5 +181,5 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-    console.log(`serving on port ${port}`);
+    console.log('Serving on port 3000!');
 })
