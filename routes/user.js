@@ -16,4 +16,13 @@ router.route('/login')
 router.route('/logout')
     .get(isLoggedIn, users.logoutUser)
 
+
+router.route('/forgot')
+    .get(users.forgotForm)
+    .post(catchAsync(users.forgotPw))
+
+router.route('/reset/:token')
+    .get(catchAsync(users.resetPwForm))
+    .post(catchAsync(users.resetPw))
+
 module.exports = router;

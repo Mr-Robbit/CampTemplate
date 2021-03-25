@@ -39,9 +39,19 @@
                     <textarea class="form-control" name="campground[description]" id="description" required></textarea>
                     <label class="form-label" for="image" required>Campground Description</label>
                 </div>
-                <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="image" multiple min="1" max="7" name="image">
-                    <label class="input-group-text" for="image">Choose Images</label>
+                <div class="mb-3">
+                    <div class="center">
+                        <div class="image_upload_preview">
+                            <label for="image" id="imageForm"><i class="fas fa-file-upload"></i> Upload Images</label>
+                            <input type="file" id="image"  name="image" accept="image/png/*" onchange="showPreview(event);" multiple min="1" max="7">
+                            <div class="preview_upload_images">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <input type="file" class="imageFile" id="imageForm" multiple min="1" max="7" name="image" placeholder="Choose Campground Images">
+                    <label for="imageForm" class="form-label"><i class="fas fa-file-upload"></i> Choose Campground Images:</label> -->
+                   
                 </div>
                 <div class="mb-3"> <button class="btn btn-success">Add campground</button></div>
             </form>

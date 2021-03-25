@@ -2,27 +2,28 @@
     <div class="d-flex justify-content-center align-items-center mt-5">
         <div class="col-md-6  col-xl-4 ">
             <div class="card shadow">
-                <img src="https://images.unsplash.com/photo-1445888761652-fc13cbb0d819?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjQ4fHxjYW1wZmlyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                <img height="300px" src="../images/compas.jpg"
                     class="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title">Login</h5>
                     <form action="/login" method="POST" novalidate class="validate-form">
-                        <div class="mb-3">
-                            <label class="form-label" for="username">Username</label>
+                        <div class="form-floating mb-3">
                             <input type="text" class="form-control" name="username" id="username" autofocus required>
+                            <label class="form-label" for="username">Username</label>
                             <div class="valid-feedback">
                                 looks good!
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="password">Password</label>
+                        <div class="form-floating mb-3">
                             <input type="password" class="form-control" name="password" id="password" required>
+                            <label class="form-label" for="password">Password</label>
                             <div class="valid-feedback">
                                 looks good!
                             </div>
                         </div>
-                        <div class="d-grid">
-                            <button class="btn btn-success">login</button>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary">login</button>
+                            <a class="btn btn-warning" href="/forgot">Forgot Password?</a>
                         </div>
                     </form>
                 </div>

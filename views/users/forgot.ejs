@@ -1,0 +1,31 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="row">
+        <h1 class="text-center mainHeader">Password recovery</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-8 offset-md-2 reset_pw_msg">
+            <p>An Email with instructions to reset your password will be sent to the address submitted below.
+            If you received no email check address entered and try again.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form action="/forgot" method="POST" id="forgotPassword">
+                <div class="form-floating mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input name="email" type="email" class="form-control" placeholder="User Email"
+                        aria-describedby="email-label" aria-label="Email" id="email">
+                                              
+                    </div>
+                </div>
+                <div class="mb-3 d-grid">
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+

@@ -65,7 +65,7 @@ app.use(mongoSanitize({
 
 
 // cookies/session config
-const secret = process.env.SESSION_SECRET || 'testpass56il34l3el4121ed';
+const secret = process.env.SESSION_SECRET;
 
 const store = new MongoDBStore({
     url: dbUrl,
@@ -87,7 +87,8 @@ const sessionConfig = {
         expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
         maxAge: 1000 * 60 * 60 * 24 * 7,
         httpOnly: true,
-        // secure: true
+        SameSite: 'Lax',
+        secure: true
     }
 }
 app.use(session(sessionConfig));
@@ -109,6 +110,7 @@ const styleSrcUrls = [
     "https://api.tiles.mapbox.com/",
     "https://fonts.googleapis.com/",
     "https://use.fontawesome.com/",
+    "https://fonts.gstatic.com/",
 ];
 const connectSrcUrls = [
     "https://api.mapbox.com/",
@@ -117,7 +119,8 @@ const connectSrcUrls = [
     "https://events.mapbox.com/",
 ];
 const fontSrcUrls = [
-    "https://use.fontawesome.com/"
+    "https://use.fontawesome.com/",
+    "https://fonts.gstatic.com",
 ];
 app.use(
     helmet.contentSecurityPolicy({

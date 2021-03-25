@@ -7,21 +7,20 @@
                 <div class="card-body">
                     <h5 class="card-title">Register</h5>
                     <form action="/register" method="POST" novalidate class="validate-form">
-                        <div class="mb-3">
-                            <label class="form-label" for="username">Username</label>
+                        <div class="form-floating mb-3">
                             <input type="text" class="form-control" name="username" id="username" autofocus required>
+                            <label class="form-label" for="username">Username</label>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="email">Email</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">@</span>
                                 <input type="email" class="form-control" id="email" name="email"
-                                    aria-describedby="email-label" aria-label="email" required>
+                                    aria-describedby="email-label" aria-label="email" placeholder="Email" required>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="password">Password</label>
+                        <div class="form-floating mb-3">
                             <input type="password" class="form-control" name="password" id="password" required>
+                            <label class="form-label" for="password">Password</label>
                         </div>
                         <div class="d-grid">
                             <button class="btn btn-success">Register</button>
